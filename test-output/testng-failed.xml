@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="RUN ON CHROME(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_04_Logout"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.bankgaru.user.Level_03_Page_Object_Pattern -->
+    </classes>
+  </test> <!-- RUN ON CHROME(failed) -->
+  <test thread-count="5" name="RUN ON HEADLESS FIREFOX(failed)">
+    <parameter name="browser" value="hfirefox"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_04_Logout"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.bankgaru.user.Level_03_Page_Object_Pattern -->
+    </classes>
+  </test> <!-- RUN ON HEADLESS FIREFOX(failed) -->
+  <test thread-count="5" name="RUN ON HEADLESS CHROME(failed)">
+    <parameter name="browser" value="hchrome"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_04_Logout"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.bankgaru.user.Level_03_Page_Object_Pattern -->
+    </classes>
+  </test> <!-- RUN ON HEADLESS CHROME(failed) -->
+</suite> <!-- Failed suite [Suite] -->

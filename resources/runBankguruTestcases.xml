@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="BANK GURU" name="Suite">
+  <test name="RUN ON FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern"/>     
+    </classes>
+  </test> 
+  <test name="RUN ON CHROME">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern"/>     
+    </classes>
+  </test> 
+  <test name="RUN ON HEADLESS FIREFOX">
+  	<parameter name="browser" value="hfirefox"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern"/>     
+    </classes>
+  </test> 
+  <test name="RUN ON HEADLESS CHROME">
+  	<parameter name="browser" value="hchrome"/>
+    <classes>
+      <class name="com.bankgaru.user.Level_03_Page_Object_Pattern"/>     
+    </classes>
+  </test> 
+</suite> 
