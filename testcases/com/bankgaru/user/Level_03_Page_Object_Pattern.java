@@ -30,14 +30,14 @@ public class Level_03_Page_Object_Pattern extends AbtractTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowerDriver(browserName);
 		loginPage = new LoginPageObject(driver);
-		name = "minh";
-		date = "05-06-2011";
+		name = "lan";
+		date = "05-10-2011";
 		address = "Hoai Duc";
 		city = "Ha Noi";
 		state = "Viet Nam";
 		pin = "123456";
 		mobile = "0979578686";
-		email = "evotek"+ randomInterger() + "@gmail.com" ;
+		email = "maybet"+ randomInterger() + "@gmail.com" ;
 		passwordCustomer = "12345678";
 	}
 
@@ -48,10 +48,11 @@ public class Level_03_Page_Object_Pattern extends AbtractTest {
 		loginPage.clickToHereLink();
 		registerPage = new RegisterPageObject(driver);
 		System.out.println("Register - Step 03: Input to email texbox");
-		registerPage.inputToEmailTexbox("mygmailinfo"+ randomInterger() + "@gmail.com");
+		registerPage.inputToEmailTexbox("apptesw"+ randomInterger() + "@gmail.com");
 		System.out.println("Register - step 04: click submit button");
 		registerPage.clickToSubmitButton();
 		System.out.println("Register - step 05: get UserID/Passowrd information");
+		
 		userID = registerPage.getUserIDText();
 		password = registerPage.getPasswordText();
 	}
@@ -123,8 +124,10 @@ public class Level_03_Page_Object_Pattern extends AbtractTest {
 	}
 	
 	public String randomInterger() {
-		Random ran = new Random(999);
-		int rusult = ran.nextInt();
-		return Integer.toString(rusult);
+		int number = new Random().nextInt(999);
+		String result = Integer.toString(number);
+		System.out.println("random number for mail: " + result);
+		
+		return result;		
 	}
 }

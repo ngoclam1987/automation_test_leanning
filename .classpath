@@ -13,7 +13,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="lib/testng-6.14.3.jar"/>
-	<classpathentry kind="lib" path="lib/webDriverManage/webdrivermanager-4.4.3.jar"/>
 	<classpathentry kind="lib" path="libWebBrowserDriver/commons-codec-1.13.jar"/>
 	<classpathentry kind="lib" path="libWebBrowserDriver/commons-collections4-4.3.jar"/>
 	<classpathentry kind="lib" path="libWebBrowserDriver/commons-compress-1.20.jar"/>

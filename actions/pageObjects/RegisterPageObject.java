@@ -20,6 +20,7 @@ public class RegisterPageObject  extends AbtractPage{
 	public void clickToSubmitButton() {
 		awaitToElementClickable(driver, RegisterPageUI.SUBMIT_BUTTON);
 		clickToElement(driver, RegisterPageUI.SUBMIT_BUTTON);
+		
 	}
 
 	public String getUserIDText() {

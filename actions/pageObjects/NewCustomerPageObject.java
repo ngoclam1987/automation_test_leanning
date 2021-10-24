@@ -1,7 +1,5 @@
 package pageObjects;
 
-import javax.xml.xpath.XPathEvaluationResult.XPathResultType;
-
 import org.openqa.selenium.WebDriver;
 
 import commons.AbtractPage;
@@ -64,6 +62,7 @@ public class NewCustomerPageObject  extends AbtractPage{
 	public void clickToSubmitButton() {
 		awaitToElementClickable(driver, NewCustomerPageUI.SUBMIT_BUTTON);
 		clickToElement(driver, NewCustomerPageUI.SUBMIT_BUTTON);
+		sleepInSecond(2);
 	}
 
 	public String getSuccessMessage() {
